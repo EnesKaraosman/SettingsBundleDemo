@@ -15,6 +15,7 @@
 		F4307D5923DAF3DF0016C8AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4307D5723DAF3DF0016C8AA /* LaunchScreen.storyboard */; };
 		F4307D6123DAF4540016C8AA /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F4307D6023DAF4540016C8AA /* Settings.bundle */; };
 		F4B17DF223DDCBAA00620DB8 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B17DF123DDCBAA00620DB8 /* Environment.swift */; };
+		F4B17DF423DEC18900620DB8 /* settingsBundleScreenCapture.gif in Resources */ = {isa = PBXBuildFile; fileRef = F4B17DF323DEC18800620DB8 /* settingsBundleScreenCapture.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F4307D5A23DAF3DF0016C8AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4307D6023DAF4540016C8AA /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		F4B17DF123DDCBAA00620DB8 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		F4B17DF323DEC18800620DB8 /* settingsBundleScreenCapture.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = settingsBundleScreenCapture.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		F4307D4B23DAF3DC0016C8AA /* SettingsBundleLab */ = {
 			isa = PBXGroup;
 			children = (
+				F4B17DF323DEC18800620DB8 /* settingsBundleScreenCapture.gif */,
 				F4307D4C23DAF3DC0016C8AA /* AppDelegate.swift */,
 				F4307D4E23DAF3DC0016C8AA /* SceneDelegate.swift */,
 				F4307D5023DAF3DC0016C8AA /* ViewController.swift */,
@@ -135,6 +138,7 @@
 				F4307D6123DAF4540016C8AA /* Settings.bundle in Resources */,
 				F4307D5923DAF3DF0016C8AA /* LaunchScreen.storyboard in Resources */,
 				F4307D5623DAF3DF0016C8AA /* Assets.xcassets in Resources */,
+				F4B17DF423DEC18900620DB8 /* settingsBundleScreenCapture.gif in Resources */,
 				F4307D5423DAF3DC0016C8AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
