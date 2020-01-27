@@ -13,6 +13,8 @@
 		F4307D5423DAF3DC0016C8AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4307D5223DAF3DC0016C8AA /* Main.storyboard */; };
 		F4307D5623DAF3DF0016C8AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4307D5523DAF3DF0016C8AA /* Assets.xcassets */; };
 		F4307D5923DAF3DF0016C8AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4307D5723DAF3DF0016C8AA /* LaunchScreen.storyboard */; };
+		F4307D6123DAF4540016C8AA /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F4307D6023DAF4540016C8AA /* Settings.bundle */; };
+		F4B17DF223DDCBAA00620DB8 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B17DF123DDCBAA00620DB8 /* Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F4307D5523DAF3DF0016C8AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4307D5823DAF3DF0016C8AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4307D5A23DAF3DF0016C8AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4307D6023DAF4540016C8AA /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		F4B17DF123DDCBAA00620DB8 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 		F4307D4023DAF3DC0016C8AA = {
 			isa = PBXGroup;
 			children = (
+				F4307D6023DAF4540016C8AA /* Settings.bundle */,
 				F4307D4B23DAF3DC0016C8AA /* SettingsBundleLab */,
 				F4307D4A23DAF3DC0016C8AA /* Products */,
 			);
@@ -63,6 +68,7 @@
 				F4307D5523DAF3DF0016C8AA /* Assets.xcassets */,
 				F4307D5723DAF3DF0016C8AA /* LaunchScreen.storyboard */,
 				F4307D5A23DAF3DF0016C8AA /* Info.plist */,
+				F4B17DF123DDCBAA00620DB8 /* Environment.swift */,
 			);
 			path = SettingsBundleLab;
 			sourceTree = "<group>";
@@ -77,6 +83,7 @@
 				F4307D4523DAF3DC0016C8AA /* Sources */,
 				F4307D4623DAF3DC0016C8AA /* Frameworks */,
 				F4307D4723DAF3DC0016C8AA /* Resources */,
+				F4B17DF023DDAF6600620DB8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -125,6 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4307D6123DAF4540016C8AA /* Settings.bundle in Resources */,
 				F4307D5923DAF3DF0016C8AA /* LaunchScreen.storyboard in Resources */,
 				F4307D5623DAF3DF0016C8AA /* Assets.xcassets in Resources */,
 				F4307D5423DAF3DC0016C8AA /* Main.storyboard in Resources */,
@@ -133,12 +141,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F4B17DF023DDAF6600620DB8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "BUILD_APP_DIR=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\n\nif [ \"$CONFIGURATION\" == \"Release\" ]; then\nrm -Rf $BUILD_APP_DIR/Settings.bundle\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F4307D4523DAF3DC0016C8AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F4307D5123DAF3DC0016C8AA /* ViewController.swift in Sources */,
+				F4B17DF223DDCBAA00620DB8 /* Environment.swift in Sources */,
 				F4307D4D23DAF3DC0016C8AA /* AppDelegate.swift in Sources */,
 				F4307D4F23DAF3DC0016C8AA /* SceneDelegate.swift in Sources */,
 			);
@@ -285,6 +314,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UF9KAHB6EX;
 				INFOPLIST_FILE = SettingsBundleLab/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +332,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UF9KAHB6EX;
 				INFOPLIST_FILE = SettingsBundleLab/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
